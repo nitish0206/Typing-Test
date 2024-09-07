@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="aa3216bc8664471a5f75363fd74c728a-timer-clock-icon-1901920416.png" alt="" />
+        <div class="time">Time</div>
+        <button class="timebutton ">30</button>
+        <button class="timebutton">60</button>
+        <button class="timebutton">120</button>
+        <input type="number" placeholder="Custom" />
+
+        <img src="./A-Letter-PNG-Picture-2345049081.png" class="word_image" />
+        <div class="time">Word</div>
+        <button class="wordbutton">30</button>
+        <button class="wordbutton">60</button>
+        <button class="wordbutton">120</button>
+        <input type="number" placeholder="Custom" />
+      </div>
+      <div class="start" >
+        <button onclick="{showtestpage(this)}" id="start_button">Start</button>
+      </div>
+
+      <div class="test_box ">
+        <div class="remaining_time bgtrans">
+          <div class="logo bgtrans">
+            <img src="vWFqF7dqJNV7YTjz5xLMVa-1200-80-removebg-preview.png" class="bgtrans" alt="">
+          </div>
+          <div class="timer bgtrans">
+            <!-- <img src="icon-04-timer-icon-11553476391xppig4pxyh.png" alt=""> -->
+            <video src="Clock.mp4" autoplay loop muted></video>
+            <div class="currtime bgtrans"></div>
+          </div>
+        </div>
+        <div class="text_area">
+        </div>
+        <div class="realtime_result bgtrans">
+          <div class="gross_speed bgtrans">Gross:0</div>
+          <div class="accuracy bgtrans">Accuracy:0%</div>
+          <div class="net_speed bgtrans">Net:0</div>
+          <div class="error bgtrans">Error:0</div>
+        </div>
+      </div>
+
+      <div class="main_result_box">
+        <div class="heading"><b style="font-weight: bolder;">Your Typing Result:</b></div>
+        <div class="result_box">
+          <div class="time_taken">
+            <span class="bgtrans" style="font-weight: bold;">Time Taken:</span>
+          </div>
+          <div class="words_typed">
+            <span class="bgtrans" style="font-weight: bold;">Word Typed:</span>
+          </div>
+          <div class="speed">
+            <span class="bgtrans" style="font-weight: bold;">Speed:</span>
+          </div>
+          <div class="correct_word">
+            <span class="bgtrans" style="font-weight: bold;">Correct Words:</span>
+          </div>
+          <div class="err">
+            <span class="bgtrans" style="font-weight: bold; ;">Errors:</span>
+          </div>
+          <div class="acc">
+            <span class="bgtrans" style="font-weight: bold;">Accuracy:</span>
+          </div>
+        </div>
+        <div class="reset" onclick="location.reload();" ><button>Reteset</button></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,331 @@
+/* From Uiverse.io by vinodjangid07 */ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+
+body{
+    background: url("john-towner-JgOeRuGD_Y4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 20px;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60vw;
+    height: auto;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(7px);
+    opacity: 0.9;
+    border-radius: 30px 30px 0px 0px;
+    font-size: 23px;
+}
+
+.container img{
+    width: 45px;
+    height: 45px;
+    margin-left:30px ;
+    margin-top:20px ;
+}
+
+
+input{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-left: 5px;
+}
+
+input:focus{
+    border: 0px;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+button{
+    background: transparent;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px ;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.time{
+    background:transparent;
+    width: 70px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: -10px;
+    font-size: 20px;
+    user-select: none;
+}
+
+button:hover{
+    scale:1.1
+}
+
+.selected{
+    border: 1px solid grey;
+}
+
+.word_image{
+    background: transparent;
+    height: 40px;
+    width: 40px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+    position: relative;
+}
+
+.start{
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px 0px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.start button,.reset button{
+    background-color: rgb(69, 234, 27);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.test_box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:transparent;
+    z-index: 2; 
+    width: 100%;
+    height: auto;
+    border-radius:30px ;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    backdrop-filter: blur(7px);
+}
+
+.text_area{
+    height: 80%;
+    /* border: 1px solid black; */
+    background:transparent ;
+    text-overflow: string;
+    font-size: 35px;
+    padding: 10px;
+    color: #616365;
+}
+
+.remaining_time{
+    font-size: 40px;
+    background: transparent;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img{
+    background: transparent;
+    width: 200px;
+}
+
+.bgtrans{
+    background-color: transparent;
+}
+
+.timer{
+    margin-right:10px ;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    
+}
+
+.timer video{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.currtime{
+    width: 90px;
+}
+
+.realtime_result{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+
+.correct{
+    color: rgb(117, 233, 28);
+}
+.incorrect{
+    color: rgb(225, 67, 39);
+}
+
+.incorrectSpace{
+    background-color: #fa9090;
+    opacity: 0.4;
+}
+
+
+.main_result_box{
+    width: 90%;
+    background: transparent;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 5px;
+    user-select: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    visibility: hidden;
+    position: absolute;
+    backdrop-filter: blur(7px);
+}
+
+.main_result_box span,b{
+    background: transparent;
+}
+
+
+.heading{
+    padding: 20px 0px 0px 0px;
+    margin: auto;
+    background: transparent;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.result_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto auto auto ;
+    width: 90%;
+    justify-items: center;
+    gap: 20px;
+    background: transparent; 
+    border-radius: 30px;
+    padding: 20px 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    user-select: none;
+}
+
+.time_taken{
+    background: transparent;
+}
+.speed{
+    background: transparent;
+}
+.words_typed{
+    background: transparent;
+}
+.correct_word{
+    background: transparent;
+}
+.acc{
+    background: transparent;
+}
+.err{
+    background: transparent;
+}
+
+.reset{
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    display: grid;
+}
+
+
+@media screen and (max-width: 1200px) and (min-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .container button{
+        width: auto;
+    }
+    .container input{
+        width: auto;
+    }
+    .container img{
+        width: auto;
+    }
+}
+
+/* @media screen and (max-width:600px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+                "a a k k"
+                "b c d e" 
+                "f f f f"
+                "g h i j";           ;
+    }
+    .container:nth-child(1){
+        grid-area: a;
+    }
+    .time{
+        grid-area: k;
+    }
+
+    .timebutton{
+        grid-area: ;
+    }
+    .container button{
+        width: auto;
+    }
+    .container input{
+        width: auto;
+    }
+    .container img{
+        width: auto;
+    }
+} */
